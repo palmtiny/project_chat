@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/chat.css">
+		<link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="inner-wrapper">
+
+			<div class="head">CHAT!!!</div>
+			<div id="box">
+				<div id="list">
+					<p class="chat">Test !!</p>
+				</div>
+			</div>
+
+			<div class="inp">
+				<input type="text" name="" id="txt">
+				<input type="button" name="" id="send" value="Send">
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+
+			$(function() {
+
+				$("#send").click(function () {
+				var add = $("#txt").val();
+				
+				$("#box").append("<div id='list'><p class='chat'>"+add+"</p></div>");
+
+				$("#txt").val('');
+
+				});
+
+			});
+			
+		</script>
+
+
+
+	</body>
+
+</html>
